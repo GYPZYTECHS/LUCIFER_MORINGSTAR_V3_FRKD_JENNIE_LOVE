@@ -45,9 +45,8 @@ async def answer(bot, query):
                 f_caption=CUSTOM_FILE_CAPTION.format(file_name=title, file_size=size, file_caption=f_caption)
             except Exception as e:
                 print(e)
-                f_caption=f_caption
-        if f_caption is None:
-            f_caption = f"{file.file_name}"
+            caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + """</code>\n
+<b> 🥰 𝐉𝐨𝐢𝐧🍿@MoviesTalkies23🍿𝐅𝐨𝐫 𝐌𝐨𝐫𝐞 𝑀𝑜𝑣𝑖𝑒𝑠 & 𝑆𝑒𝑟𝑖𝑒𝑠 🥰  </b>""")
         results.append(
             InlineQueryResultCachedDocument(
                 title=file.file_name,
