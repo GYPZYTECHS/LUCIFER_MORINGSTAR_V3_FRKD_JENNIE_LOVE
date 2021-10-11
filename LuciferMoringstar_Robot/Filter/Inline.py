@@ -22,9 +22,7 @@ async def answer(bot, query):
 
 🗣 In Order To Get The Movie Requested By You in Our Groups, You Will Have To Join Our Official Channel First. After That, Try Accessing That Movie Again From Our Group. I'll Send You That Movie Privately 🙈
 
-👇 JOIN THIS CHANNEL & TRY 👇
-
-[https://t.me/August_cinema]',
+',
                            switch_pm_parameter="subscribe")
         return
 
